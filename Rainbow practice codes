@@ -1,0 +1,26 @@
+import turtle
+rainbow = ["orange", "red", "yellow", "blue", "green", "purple"]
+
+rb = turtle.Turtle()
+rb.width(4)
+rb.color("red")
+rb.penup()
+rb.back(50)
+rb.pendown()
+for pretty_color in rainbow:
+    rb.color(pretty_color)
+    rb.forward(100)
+    rb.right(60)
+rb.hideturtle()
+
+
+
+for color in rainbow:
+    rb.color(color)
+    for side in [1,2,3,4,5]: # draw a single star
+        rb.forward(50)
+        rb.right(144)
+    rb.right(60) # moves to the position to draw the next star. turns right by 60
+    rb.penup() # pick the pen up
+    rb.forward(50) #move forward by 50 without drawing
+    rb.pendown() # draw the next start by moving to the top of the loop to draw a new star
