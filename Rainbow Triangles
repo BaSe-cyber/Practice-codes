@@ -1,0 +1,47 @@
+import turtle
+rt = turtle.Turtle()
+
+rt.width(5)
+rt.speed(3)
+
+
+rt.penup()
+rt.back(-140)
+rt.pendown()
+
+for color in ["red", "blue", "green", "orange", "purple", "black", "yellow"]:
+        rt.color(color)
+        
+        for side in [1, 2, 3]:
+            rt.right(120)
+            rt.forward(100)
+        rt.penup()
+        rt.right(51)
+        rt.forward(100)
+        
+        rt.pendown()
+rt.hideturtle()
+
+import turtle
+rt = turtle.Turtle()
+
+rt.width(4)
+rt.speed(3)
+
+
+rt.penup()
+rt.back(140)
+rt.pendown()
+
+for color in ["red", "blue", "green", "orange", "purple", "brown"]:
+        rt.color(color)
+        
+        for side in [1, 2, 3]:
+            rt.right(120)
+            rt.forward(100)
+        rt.penup()
+        rt.right(60)
+        rt.forward(100)
+        
+        
+        rt.pendown()
